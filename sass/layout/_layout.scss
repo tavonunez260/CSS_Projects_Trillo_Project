@@ -1,0 +1,99 @@
+.container {
+    max-width: 120rem;
+    margin: 8rem auto;
+    background-color: var(--grey-light-2);
+    box-shadow: var(--shadow-dark);
+    min-height: 50rem;
+    @media only screen and (max-width: $bp-largest) {
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+.header {
+    font-size: 1.5rem;
+    height: 7rem;
+    background-color: #fff;
+    border-bottom: var(--line);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media only screen and (max-width: $bp-smallest) {
+        flex-wrap: wrap;
+        height: 11rem;
+        align-content: space-around;
+    }
+}
+
+.content {
+    display: flex;
+    @media only screen and (max-width: $bp-medium) {
+        flex-direction: column;
+    }
+}
+
+.sidebar {
+    background-color: var(--grey-dark-1);
+    flex-basis: 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hotel-view {
+    flex-basis: 82%;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    padding: 4.5rem;
+    background-color: var(--grey-light-3);
+    &__part1 {
+        display: flex;
+        @media only screen and (max-width: $bp-small) {
+            flex-direction: column;
+        }
+    }
+    &__part2 {
+        display: flex;
+        justify-content: center;        
+        align-items: center;
+    }
+    @media only screen and (max-width: $bp-medium) {
+        padding: 3rem;
+        padding-bottom: 0;
+    }
+}
+
+.description {
+    color: black;
+    background-color: white;
+    box-shadow: var(--shadow-light);
+    padding: 4rem;
+    flex-basis: 60%;
+    margin-right: 4.5rem;
+    @media only screen and (max-width: $bp-medium) {
+        padding: 2rem;
+        margin-right: 3rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+        margin-right: 0;
+        margin-bottom: 3rem;
+    }
+}
+
+.user-reviews {
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
